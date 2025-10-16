@@ -2,12 +2,16 @@ function alterarStatus(id) {
     let game = document.getElementById(`game-${id}`);
     let imagem = game.querySelector(".dashboard__item__img");
     let botão = game.querySelector(".dashboard__item__button");
-    
-    // função de mudança do botão
+    let nome = game.querySelector('.dashboard__item__name');
+
+     // função de mudança do botão
 
     if (botão.classList.contains("dashboard__item__button--return")) {
-        botão.classList.remove("dashboard__item__button--return");
-        botão.innerHTML = "Alugar";
+       let confirmação = confirm(`Você está prestes a devolver o jogo:"${nome}", gostaria de prosseguir?`);
+        if (confirmação == true) {
+            botão.classList.remove("dashboard__item__button--return");
+            botão.innerHTML = "Alugar";
+        } else {return};
     } else {
         botão.classList.add("dashboard__item__button--return");
         botão.innerHTML = "Devolver";
@@ -21,3 +25,4 @@ function alterarStatus(id) {
         imagem.classList.add("dashboard__item__img--rented");
     };
 };
+ 
