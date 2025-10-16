@@ -7,7 +7,7 @@
     min-height: 100vh;
 
     background: rgb(0, 0, 0);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(1, 8, 14, 1) 25%, rgba(80, 94, 255, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgb(35,4,50) 25%, rgb(80, 12, 100) 50%, rgb(35,4,50) 75%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -41,7 +41,7 @@
 .divisor__line {
     height: 1px;
     width: 282px;
-    background-color: #00F4BF;
+    background-color: #8313a5;
 }
 
 .page-title {
@@ -53,7 +53,7 @@
 }
 
 .page-title__emphasis {
-    color: #505EFF;
+    color: #8313a5;
 }
 
 .dashboard {
@@ -62,7 +62,7 @@
     border-radius: 2rem;
     border-width: 1px;
     border-style: solid;
-    border-color: #00F4BF;
+    border-color: #0C356A;
 
     padding: 3rem;
     width: 100%;
@@ -123,11 +123,11 @@
 
     border-radius: 1rem;
 
-    background-color: #1875E8;
+    background-color: #8313a5;
 }
 
 .dashboard__item__button--return {
-    background-color: #01080E;
+    background-color: #250432;
 }
 
 .hachuras {
