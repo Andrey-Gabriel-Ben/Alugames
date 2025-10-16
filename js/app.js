@@ -13,12 +13,10 @@ function alterarStatus(id) {
         if (confirmação == true) {
             botão.classList.remove("dashboard__item__button--return");
             botão.innerHTML = "Alugar";
-            contabilizarjOGOS ();
         } else {return};
     } else {
         botão.classList.add("dashboard__item__button--return");
         botão.innerHTML = "Devolver";
-        contabilizarjOGOS ();
     };
 
     // Função de mudança da imagem
@@ -28,9 +26,13 @@ function alterarStatus(id) {
     } else {
         imagem.classList.add("dashboard__item__img--rented");
     };
+
+    contabilizarjOGOS ();
+    
 };
  
 function contabilizarjOGOS () {
     let quantidade = document.querySelectorAll('.dashboard__item__button--return')
     console.log(`existem atualmente ${quantidade.length} jogos alugados`)
 }
+
