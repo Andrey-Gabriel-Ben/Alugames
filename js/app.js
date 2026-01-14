@@ -9,7 +9,7 @@ function alterarStatus(id) {
      // função de mudança do botão
 
     if (botão.classList.contains("dashboard__item__button--return")) {
-       let confirmação = confirm(`Você está prestes a devolver o jogo:"${nome}", gostaria de prosseguir?`);
+       let confirmação = confirm(`Você está prestes a devolver o jogo: "${nome.textContent}", gostaria de prosseguir?`);
         if (confirmação == true) {
             botão.classList.remove("dashboard__item__button--return");
             botão.innerHTML = "Alugar";
